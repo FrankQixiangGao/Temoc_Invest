@@ -32,7 +32,7 @@ const NOTIFICATIONS = [
   {
     id: faker.datatype.uuid(),
     title: 'Your order is placed',
-    description: 'waiting for shipping',
+    description: 'The Payment is completed successfully',
     avatar: null,
     type: 'order_placed',
     createdAt: set(new Date(), { hours: 10, minutes: 30 }),
@@ -65,15 +65,7 @@ const NOTIFICATIONS = [
     createdAt: sub(new Date(), { days: 2, hours: 3, minutes: 30 }),
     isUnRead: false,
   },
-  {
-    id: faker.datatype.uuid(),
-    title: 'Delivery processing',
-    description: 'Your order is being shipped',
-    avatar: null,
-    type: 'order_shipped',
-    createdAt: sub(new Date(), { days: 3, hours: 3, minutes: 30 }),
-    isUnRead: false,
-  },
+
 ];
 
 export default function NotificationsPopover() {
