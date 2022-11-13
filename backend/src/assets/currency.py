@@ -10,7 +10,8 @@ class Currencies:
    ]
 
    def __init__(self):
+      self.cpo = ()
       pass
 
    def optimize(self):
-      cpo = ConstrainedPortfolioOptimization.train_non_stocks(self.CUR)
+      self.cpo = ConstrainedPortfolioOptimization.train_non_stocks(self.CUR)

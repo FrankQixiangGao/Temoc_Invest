@@ -36,8 +36,9 @@ class Stocks:
    ]
 
    DJI_STOCK_DF = pd.read_csv("https://wavta-nlp-data.s3.us-east-2.amazonaws.com/dji30.csv")
-   
+
    def __init__(self):
+      self.cpo = ()
       pass
 
    @classmethod
@@ -46,7 +47,4 @@ class Stocks:
 
 
    def optimize(self):
-      cpo = ConstrainedPortfolioOptimization.train(self.DJI_STOCKS)
-
-
-
+      self.cpo = ConstrainedPortfolioOptimization.train(self.DJI_STOCKS)
