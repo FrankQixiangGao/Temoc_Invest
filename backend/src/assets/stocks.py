@@ -35,7 +35,7 @@ class Stocks:
       "WMT"
    ]
 
-   DJI_STOCK_DF = pd.read_csv("https://wavta-nlp-data.s3.us-east-2.amazonaws.com/dji.csv")
+   DJI_STOCK_DF = pd.read_csv("https://wavta-nlp-data.s3.us-east-2.amazonaws.com/dji30.csv")
    
    def __init__(self):
       pass
