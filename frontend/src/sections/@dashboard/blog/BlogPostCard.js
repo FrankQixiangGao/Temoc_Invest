@@ -131,7 +131,7 @@ export default function BlogPostCard({ post, index }) {
             }),
           }}
         >
-          <Typography gutterBottom variant="caption" sx={{ color: 'text.disabled', display: 'block' }}>
+          <Typography gutterBottom variant="caption" sx={{ color: 'text.disabled', display: 'Sold' }}>
             {fDate(createdAt)}
           </Typography>
 

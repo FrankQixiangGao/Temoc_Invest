@@ -1,8 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { filter } from 'lodash';
 import { sentenceCase } from 'change-case';
-import { useState } from 'react';
-// @mui
+import { useState } from 'react';// @mui
 import {
   Card,
   Table,
@@ -30,14 +29,17 @@ import Scrollbar from '../components/scrollbar';
 import { UserListHead, UserListToolbar } from '../sections/@dashboard/user';
 // mock
 import USERLIST from '../_mock/user';
+import InputModal from '../components/modal/InputModal';
+
 
 // ----------------------------------------------------------------------
 
 const TABLE_HEAD = [
-  { id: 'name', label: 'Name', alignRight: false },
-  { id: 'company', label: 'Company', alignRight: false },
-  { id: 'role', label: 'Role', alignRight: false },
-  { id: 'isVerified', label: 'Verified', alignRight: false },
+  { id: 'name', label: 'Order ID', alignRight: false },
+  { id: 'company', label: 'Companies', alignRight: false },
+  // { id: 'role', label: 'Role', alignRight: false },
+  { id: '' },
+  { id: 'isVerified', label: 'High Risk', alignRight: false },
   { id: 'status', label: 'Status', alignRight: false },
   { id: '' },
 ];
@@ -75,6 +77,8 @@ function applySortFilter(array, comparator, query) {
 
 export default function UserPage() {
   const [open, setOpen] = useState(null);
+
+  const [modelOpen, setModelOpen] = useState(false);
 
   const [page, setPage] = useState(0);
 
@@ -148,6 +152,7 @@ export default function UserPage() {
 
   return (
     <>
+      <InputModal open={modelOpen} handleClose={()=>setModelOpen(false)}>Place Order</InputModal>
       <Helmet>
         <title> User | Minimal UI </title>
       </Helmet>
@@ -155,10 +160,10 @@ export default function UserPage() {
       <Container>
         <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
           <Typography variant="h4" gutterBottom>
-            User
+            Orders
           </Typography>
-          <Button variant="contained" startIcon={<Iconify icon="eva:plus-fill" />}>
-            New User
+          <Button variant="contained" startIcon={<Iconify icon="eva:plus-fill" />}onClick={() => setModelOpen(true)}>
+            Investment
           </Button>
         </Stack>
 
