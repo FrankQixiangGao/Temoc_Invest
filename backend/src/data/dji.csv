@@ -1,0 +1,30 @@
+NAME,EF,High Tech,Industry
+3M,0,0,Chem
+American Express,1,0,Fin
+Amgen,1,0,Bio
+Apple,1,1,Tech
+Boeing,0,1,Mech
+Caterpillar,0,0,Mech
+Chevron,0,0,Oil
+Cisco,1,1,Tech
+Coca-Cola,0,0,Food
+Goldman Sachs,1,1,Fin
+Home Depot,1,0,Retl
+Honeywell,0,1,Mech
+IBM,1,1,Tech
+Intel,1,1,Tech
+Johnson & Johnson,1,1,Bio
+JPMorgan Chase,1,0,Fin
+McDonald's,1,0,Food
+Merck,1,1,Bio
+Microsoft,1,1,Tech
+Nike,0,0,Retl
+Procter & Gamble,1,0,Retl
+Salesforce,1,1,Tech
+Travelers,0,0,Fin
+UnitedHealth,1,0,Fin
+Verizon,0,1,Tech
+Visa,1,1,Fin
+Walgreens Boots Alliance,0,0,Retl
+Walmart,0,0,Retl
+Walt Disney,1,0,Entn
