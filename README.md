@@ -1,2 +1,2 @@
-# HackUTD9th
-This is a public repo for HackUTD9th Submission
+# Comet_Investing
+This is a public repo for submission for 9th Hackathon
