@@ -7,17 +7,13 @@ const PRODUCT_NAME = [
   'Eco-Friendly Investing Strategies',
   'Strategies for Beginners',
   'Bid Big on Tech',
-  'Fast-Food Chains',
-  'Warren Buffett’s Investing Strategies',
-  'Investing into Drugs industry',
-  'Entertainment Stocks',
   'Bid Big on Bio-tech'
 ];
 const PRODUCT_COLOR = ['#00AB55'];
 
 // ----------------------------------------------------------------------
 
-const products = [...Array(8)].map((_, index) => {
+const products = [...Array(4)].map((_, index) => {
   const setIndex = index + 1;
 
   return {
